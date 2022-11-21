@@ -98,8 +98,6 @@
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
@@ -412,6 +410,7 @@
 <p>Leonardo M. Bastos<br>
 Assistant Professor<br>
 Integrative Precision Agriculture</p>
+<p><span style="color:blue; font-size: 0.6em">Slides available at</span> <img data-src="qrcode.png" class="absolute" style="top: 78%; left: 86%; width: 150px; height: 150px; "></p>
 </div>
 </div>
 </div>
@@ -423,11 +422,39 @@ Integrative Precision Agriculture</p>
 </section>
 <section id="what-is-reproducibility" class="slide level2">
 <h2>What is <span style="color:#BA0C2F">reproducibility</span>?</h2>
-<p>aaaaa</p>
+<p>“Research is reproducible when others can reproduce the results of a scientific study given only the <strong>original data, code, and documentation</strong>”</p>
+<div class="fragment">
+<p>This applies to:</p>
+<ul>
+<li class="fragment">Other people reproducing your work<br>
+</li>
+<li class="fragment">Your future-self reproducing your past work</li>
+</ul>
+</div>
 </section>
 <section id="why-bother-with-reproducible-science" class="slide level2">
 <h2>Why bother with <span style="color:#BA0C2F">reproducible science</span>?</h2>
-<p>aaaa</p>
+<ul>
+<li class="fragment">Tracks how and why of specific decisions and analysis<br>
+</li>
+<li class="fragment">Quickly modify analysis and figures<br>
+</li>
+<li class="fragment">Increased efficiency<br>
+</li>
+<li class="fragment">Rigor and transparency<br>
+</li>
+<li class="fragment">Increased citations (of paper, code, script)</li>
+</ul>
+</section>
+<section id="but-is-it-really-that-important" class="slide level2">
+<h2>But is it really THAT important?</h2>
+<p>A <a href="https://www.nature.com/articles/533452a">Nature survey</a> with ~1,600 researchers found that</p>
+<ul>
+<li class="fragment"><p>+70% of researchers have tried and failed to reproduce another scientist’s experiments</p></li>
+<li class="fragment"><p>+50% have failed to reproduce their own experiments</p></li>
+<li class="fragment"><p>Main causes: selective reporting, weak stats, code/data unavailability, etc.</p></li>
+<li class="fragment"><p><a href="https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1740-9713.2011.00505.x">2006 Duke University cancer research case</a></p></li>
+</ul>
 </section></section>
 <section id="my-own-path-on-reproducible-science-barriers-and-solutions" class="title-slide slide level1 center">
 <h1>My own path on reproducible science: barriers and solutions</h1>
@@ -436,7 +463,7 @@ Integrative Precision Agriculture</p>
 
 <section>
 <section id="barrier-1-file-naming-and-management" class="title-slide slide level1 center">
-<h1><span style="color: #DAA520">Barrier #1</span>: File naming and management</h1>
+<h1><span class="emoji" data-emoji="construction">🚧</span> Barrier #1: File naming and management</h1>
 
 </section>
 <section id="section" class="slide level2">
@@ -463,7 +490,7 @@ Integrative Precision Agriculture</p>
 </section></section>
 <section>
 <section id="solution-1-principled-file-naming-and-project-management" class="title-slide slide level1 center">
-<h1><span style="color: #DAA520">Solution #1</span>: principled file naming and project management</h1>
+<h1><span class="emoji" data-emoji="superhero">🦸</span> Solution #1: principled file naming and project management</h1>
 
 </section>
 <section id="three-principles-of-file-naming" class="slide level2">
@@ -503,6 +530,7 @@ anova2.qmd<br>
 figure2test.png</p>
 </div>
 </div><div class="column" style="width:50%;">
+<div class="fragment">
 <div style="color: green">
 <p><span class="emoji" data-emoji="white_check_mark">✅</span><br>
 2013-N2O-daily.csv<br>
@@ -510,6 +538,7 @@ figure2test.png</p>
 2013-N2O-daily-plot.png 2014-N2O-daily.csv<br>
 2014-N2O-daily-anova.qmd<br>
 2014-N2O-daily-plot.png</p>
+</div>
 </div>
 </div>
 </div>
@@ -540,11 +569,13 @@ N2O_daily_1-10-2013.csv<br>
 2-15-2013_N2O_daily.csv</p>
 </div>
 </div><div class="column" style="width:50%;">
+<div class="fragment">
 <div style="color: green">
 <p><span class="emoji" data-emoji="white_check_mark">✅</span><br>
 2013-01-10_N2O_daily.csv<br>
 2013-02-15_N2O_daily.csv<br>
 2013-10-23_N2O_daily.csv</p>
+</div>
 </div>
 </div>
 </div>
@@ -596,7 +627,7 @@ N2O_daily_1-10-2013.csv<br>
 </section></section>
 <section>
 <section id="barrier-2-proprietary-point-and-click-software" class="title-slide slide level1 center">
-<h1><span style="color: #0080FF">Barrier #2</span>: Proprietary, point-and-click software</h1>
+<h1><span class="emoji" data-emoji="construction">🚧</span> Barrier #2: Proprietary, point-and-click software</h1>
 
 </section>
 <section id="section-1" class="slide level2">
@@ -640,7 +671,7 @@ N2O_daily_1-10-2013.csv<br>
 </section></section>
 <section>
 <section id="solution-2-free-programing-languages" class="title-slide slide level1 center">
-<h1><span style="color: #0080FF">Solution #2</span>: free programing languages</h1>
+<h1><span class="emoji" data-emoji="superhero">🦸</span> Solution #2: free programing languages</h1>
 
 </section>
 <section id="free-and-open-source-software" class="slide level2">
@@ -728,7 +759,7 @@ N2O_daily_1-10-2013.csv<br>
 </section></section>
 <section>
 <section id="barrier-3-static-programming-and-environment" class="title-slide slide level1 center">
-<h1><span style="color: #0080FF">Barrier #3</span>: Static programming and environment</h1>
+<h1><span class="emoji" data-emoji="construction">🚧</span> Barrier #3: Static programming and environment</h1>
 
 </section>
 <section id="static-scripts-with-.txt-or-.r" class="slide level2">
@@ -745,7 +776,7 @@ N2O_daily_1-10-2013.csv<br>
 </section></section>
 <section>
 <section id="solution-3-literate-programming-and-ides" class="title-slide slide level1 center">
-<h1><span style="color: #0080FF">Solution #3</span>: Literate programming (and IDEs)</h1>
+<h1><span class="emoji" data-emoji="superhero">🦸</span> Solution #3: Literate programming (and IDEs)</h1>
 
 </section>
 <section id="literate-progamming" class="slide level2">
@@ -764,13 +795,15 @@ N2O_daily_1-10-2013.csv<br>
 </section></section>
 <section>
 <section id="barrier-4-keeping-track-of-changes" class="title-slide slide level1 center">
-<h1><span style="color: #66CC00">Barrier #4</span>: Keeping track of changes</h1>
+<h1><span class="emoji" data-emoji="construction">🚧</span> Barrier #4: Keeping track of changes</h1>
 
 </section>
 <section id="can-i-go-back-in-time" class="slide level2">
 <h2>Can I go back in time?</h2>
+<div class="fragment fade-in-then-semi-out">
 <p><strong>Situation</strong>: you spent the whole week working on an analysis, only to find out it didn’t work as expected OR you got stuck with multiple bugs.</p>
-<div class="fragment">
+</div>
+<div class="fragment fade-in-then-semi-out">
 <p><strong>Situation #2</strong>: at some point your script had an important piece of code, but at the time you thought you didn’t need it anymore and deleted those lines.</p>
 </div>
 <div class="fragment">
@@ -779,7 +812,7 @@ N2O_daily_1-10-2013.csv<br>
 </section></section>
 <section>
 <section id="solution-4-version-control" class="title-slide slide level1 center">
-<h1><span style="color: #66CC00">Solution #4</span>: Version control</h1>
+<h1><span class="emoji" data-emoji="superhero">🦸</span> Solution #4: Version control</h1>
 
 </section>
 <section id="welcome-in-version-control" class="slide level2">
@@ -798,7 +831,7 @@ N2O_daily_1-10-2013.csv<br>
 </section></section>
 <section>
 <section id="barrier-5-reproducibility-requires-sharing" class="title-slide slide level1 center">
-<h1><span style="color: #FFB266">Barrier #5</span>: Reproducibility requires sharing</h1>
+<h1><span class="emoji" data-emoji="construction">🚧</span> Barrier #5: Reproducibility requires sharing</h1>
 
 </section>
 <section id="git-works-locally" class="slide level2">
@@ -813,7 +846,7 @@ N2O_daily_1-10-2013.csv<br>
 </section></section>
 <section>
 <section id="solution-5-open-data-and-code" class="title-slide slide level1 center">
-<h1><span style="color: #FFB266">Solution #5</span>: Open data and code</h1>
+<h1><span class="emoji" data-emoji="superhero">🦸</span> Solution #5: Open data and code</h1>
 
 </section>
 <section id="welcome-in-github" class="slide level2">
@@ -843,7 +876,7 @@ N2O_daily_1-10-2013.csv<br>
 </section></section>
 <section>
 <section id="barrier-6-what-if-software-versions-change" class="title-slide slide level1 center">
-<h1><span style="color: #FFB266">Barrier #6</span>: What if software versions change?</h1>
+<h1><span class="emoji" data-emoji="construction">🚧</span> Barrier #6: What if software versions change?</h1>
 
 </section>
 <section id="things-change" class="slide level2">
@@ -865,7 +898,7 @@ N2O_daily_1-10-2013.csv<br>
 </section></section>
 <section>
 <section id="solution-6-containerization" class="title-slide slide level1 center">
-<h1><span style="color: #FFB266">Solution #6</span>: Containerization</h1>
+<h1><span class="emoji" data-emoji="superhero">🦸</span> Solution #6: Containerization</h1>
 
 </section>
 <section id="containerizing-projects" class="slide level2">
@@ -886,7 +919,7 @@ N2O_daily_1-10-2013.csv<br>
 
 </section>
 <section id="reproducible-science-is-about" class="slide level2" data-background-image="path.png" data-background-opacity="0.2">
-<h2>Reproducible science is about…</h2>
+<h2><span class="emoji" data-emoji="construction">🚧</span> <span class="emoji" data-emoji="fast_forward">⏩</span> <span class="emoji" data-emoji="superhero">🦸</span> Reproducible science is about…</h2>
 <ul>
 <li class="fragment">Using sensible <strong>file names</strong><br>
 </li>
@@ -902,7 +935,7 @@ N2O_daily_1-10-2013.csv<br>
 </li>
 <li class="fragment">Using <strong>containers</strong><br>
 </li>
-<li class="fragment">Others (custom functions, iteration, etc.)</li>
+<li class="fragment">Others (custom functions, iteration, code peer-review, etc.)</li>
 </ul>
 </section>
 <section id="personal-marketing" class="slide level2">
@@ -917,11 +950,14 @@ N2O_daily_1-10-2013.csv<br>
 </div><div class="column" style="width:50%;">
 <ul>
 <li class="fragment"><p>You can find my data science teaching material on my blog: <a href="https://agronomy.netlify.app">agRonomy</a></p></li>
-<li class="fragment"><p>Interested in all these topics and wish to learn and apply them to your own research?</p></li>
-<li class="fragment"><p><span style="color:#BA0C2F"><strong>CRSS XXXX: Applications of data science in agricultural research</strong>, Spring 2024</span></p></li>
+<li class="fragment"><p>Wish to learn and apply these concepts to your own research?</p></li>
+<li class="fragment"><p><span style="color:#BA0C2F"><strong>CRSS XXXX: Applications of data science in ag research</strong>, Spring 2024</span></p></li>
 <li class="fragment"><p><strong>Thanks!</strong> <span class="emoji" data-emoji="pray">🙏</span> <span class="emoji" data-emoji="computer">💻</span></p></li>
 </ul>
 </div>
+</div>
+<div class="fragment">
+<p><img data-src="qrcode.png" class="absolute" style="top: 77%; left: 95%; width: 150px; height: 150px; "></p>
 </div>
 <div class="footer footer-default">
 
@@ -937,7 +973,6 @@ N2O_daily_1-10-2013.csv<br>
   <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
   <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="index_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
   <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
@@ -959,8 +994,7 @@ N2O_daily_1-10-2013.csv<br>
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -1131,7 +1165,7 @@ N2O_daily_1-10-2013.csv<br>
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
           RevealMath,
           RevealNotes,

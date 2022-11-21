@@ -6,7 +6,6 @@ format:
     theme: [simple, custom.scss]
     slide-number: true
     show-slide-number: all
-    chalkboard: true
 highlight-style: oblivion    
 ---
 ```{r setup}
@@ -36,6 +35,9 @@ library(flipbookr)
 Leonardo M. Bastos\
 Assistant Professor\
 Integrative Precision Agriculture
+
+[Slides available at]{style="color:blue; font-size: 0.6em"}   ![](qrcode.png){.absolute top=78% left=86% width=150 height=150}  
+
 :::
 :::
 :::
@@ -44,16 +46,38 @@ Integrative Precision Agriculture
 
 ## What is [reproducibility]{style="color:#BA0C2F"}?
 
-aaaaa
+"Research is reproducible when others can reproduce the results of a scientific study given only the **original data, code, and documentation**"   
+
+. . .  
+
+This applies to:  
+
+- Other people reproducing your work  
+- Your future-self reproducing your past work  
 
 ## Why bother with [reproducible science]{style="color:#BA0C2F"}?
 
-aaaa
+- Tracks how and why of specific decisions and analysis  
+- Quickly modify analysis and figures  
+- Increased efficiency  
+- Rigor and transparency  
+- Increased citations (of paper, code, script)  
+
+## But is it really THAT important?  
+A [Nature survey](https://www.nature.com/articles/533452a) with ~1,600 researchers found that   
+
+- +70% of researchers have tried and failed to reproduce another scientist's experiments  
+
+- +50% have failed to reproduce their own experiments  
+
+- Main causes: selective reporting, weak stats, code/data unavailability, etc.   
+
+- [2006 Duke University cancer research case](https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1740-9713.2011.00505.x)  
+
 
 # My own path on reproducible science: barriers and solutions  
 
-
-# [Barrier #1]{style="color: #DAA520"}: File naming and management  
+# :construction: Barrier #1: File naming and management  
 
 ## 
 Starting my M.Sc., this is how my file management system looked like:  
@@ -75,7 +99,7 @@ Starting my M.Sc., this is how my file management system looked like:
 
 :::
 
-# [Solution #1]{style="color: #DAA520"}: principled file naming and project management  
+# :superhero: Solution #1: principled file naming and project management  
 
 ## Three principles of file naming   
 [1. Machine readable]{style="color:#BA0C2F; font-size: 1.5em"}  
@@ -117,6 +141,7 @@ figure2test.png
 :::  
 
 ::: {.column width="50%"}
+::: {.fragment}
 ::: {style="color: green"}  
 :white_check_mark:  
 2013-N2O-daily.csv  
@@ -125,6 +150,7 @@ figure2test.png
 2014-N2O-daily.csv  
 2014-N2O-daily-anova.qmd  
 2014-N2O-daily-plot.png
+:::
 :::
 :::
 :::
@@ -155,11 +181,13 @@ N2O_daily_1-10-2013.csv
 :::
 
 ::: {.column width="50%"}
+::: {.fragment}
 ::: {style="color: green"}
 :white_check_mark:  
 2013-01-10_N2O_daily.csv  
 2013-02-15_N2O_daily.csv  
 2013-10-23_N2O_daily.csv  
+:::
 :::
 :::
 :::
@@ -206,7 +234,7 @@ To this:
 :::
 :::
 
-# [Barrier #2]{style="color: #0080FF"}: Proprietary, point-and-click software  
+# :construction: Barrier #2: Proprietary, point-and-click software  
 
 ##
 Also during my M.Sc., I was using multiple [**point-and-click**, **proprietary**]{style="color:#BA0C2F"} software:
@@ -231,7 +259,7 @@ Also during my M.Sc., I was using multiple [**point-and-click**, **proprietary**
 
 - Or maybe each step you took to create a [complicated figure]{style="color:#BA0C2F"}. How easy would it be for you to replicate it?  
 
-# [Solution #2]{style="color: #0080FF"}: free programing languages  
+# :superhero: Solution #2: free programing languages  
 
 ## Free and open-source software  
 Whenever possible and available, opt for [**free, open source**]{style="color:green"} software.  
@@ -294,7 +322,7 @@ df %>%
 Code is in itself documentation of each step you do. Adding comments with `#` make it even more understandable.  
 :::
 
-# [Barrier #3]{style="color: #0080FF"}: Static programming and environment  
+# :construction: Barrier #3: Static programming and environment  
 
 ## Static scripts with `.txt` or `.R`  
 ::: {style="text-align: center"}
@@ -306,7 +334,7 @@ Code is in itself documentation of each step you do. Adding comments with `#` ma
 ![](ide2.png)
 :::
 
-# [Solution #3]{style="color: #0080FF"}: Literate programming (and IDEs)  
+# :superhero: Solution #3: Literate programming (and IDEs)  
 
 ## Literate progamming  
 - Mixes code, output, and narrative on the same file  
@@ -320,20 +348,22 @@ Code is in itself documentation of each step you do. Adding comments with `#` ma
 :::  
 
 
-# [Barrier #4]{style="color: #66CC00"}: Keeping track of changes  
+# :construction: Barrier #4: Keeping track of changes  
 
 ## Can I go back in time?  
-**Situation**: you spent the whole week working on an analysis, only to find out it didn't work as expected OR you got stuck with multiple bugs. 
-
-. . .  
-
-**Situation #2**: at some point your script had an important piece of code, but at the time you thought you didn't need it anymore and deleted those lines. 
+::: {.fragment .fade-in-then-semi-out}  
+**Situation**: you spent the whole week working on an analysis, only to find out it didn't work as expected OR you got stuck with multiple bugs.  
+:::
+  
+::: {.fragment .fade-in-then-semi-out}  
+**Situation #2**: at some point your script had an important piece of code, but at the time you thought you didn't need it anymore and deleted those lines.  
+:::
 
 . . . 
 
 [Wouldn't it be nice/useful/graduate-school-life-saving if you could simply go back in time and start fresh from your latest working version?]{style="color:#BA0C2F"} 
 
-# [Solution #4]{style="color: #66CC00"}: Version control  
+# :superhero: Solution #4: Version control  
 
 ## Welcome in, [version control]{style="color:#BA0C2F"}  
 
@@ -346,14 +376,14 @@ Code is in itself documentation of each step you do. Adding comments with `#` ma
 ![](git2.png){.absolute left=62% top=65% width=300 height=100} 
 
 
-# [Barrier #5]{style="color: #FFB266"}: Reproducibility requires sharing  
+# :construction: Barrier #5: Reproducibility requires sharing  
 
 ## git works locally  
 - **git** is powerful on its own, but it only acts locally  
 - It becomes really powerful when we can have its features working online  
 - Working with it online also happens to be perfect for **collaboration and sharing**  :handshake:
 
-# [Solution #5]{style="color: #FFB266"}: Open data and code  
+# :superhero: Solution #5: Open data and code  
 
 ## Welcome in, [GitHub]{style="color:#BA0C2F"}  
 - **GitHub** is an online centralized platform that combines **git**, **collaborative tools**, and **cloud storage**, all free :money_with_wings:  
@@ -375,7 +405,7 @@ Code is in itself documentation of each step you do. Adding comments with `#` ma
 <https://github.com/leombastos/BangPolder>
 :::
 
-# [Barrier #6]{style="color: #FFB266"}: What if software versions change?  
+# :construction: Barrier #6: What if software versions change?  
 
 ## Things change  
 - Computer operating systems get updated  
@@ -389,7 +419,7 @@ Code is in itself documentation of each step you do. Adding comments with `#` ma
 Even if we are working off of the same GitHub repository, our local software versions may differ, which can cause discrepancies and issues that may **impact reproducibility**.    
 :::  
 
-# [Solution #6]{style="color: #FFB266"}: Containerization  
+# :superhero: Solution #6: Containerization  
 
 ## Containerizing projects  
 - To avoid discrepancies of software versions, we can use **containers**  
@@ -399,7 +429,7 @@ Even if we are working off of the same GitHub repository, our local software ver
 
 # In a nutshell  
 
-## Reproducible science is about...  {background-image="path.png" background-opacity="0.2"}
+## :construction: :fast_forward: :superhero: Reproducible science is about...  {background-image="path.png" background-opacity="0.2"}
 - Using sensible **file names**  
 - Organizing files in sensible **sub-folders**  
 - Using **free programming language software**  
@@ -407,7 +437,7 @@ Even if we are working off of the same GitHub repository, our local software ver
 - Using **version control locally**  
 - Using **distributed version control** to collaborate and share data and code  
 - Using **containers**    
-- Others (custom functions, iteration, etc.)  
+- Others (custom functions, iteration, code peer-review, etc.)  
 
 ## Personal marketing   
 ::: columns  
@@ -420,13 +450,17 @@ Even if we are working off of the same GitHub repository, our local software ver
 ::: {.column width="50%"}
 - You can find my data science teaching material on my blog: [agRonomy](https://agronomy.netlify.app)  
 
-- Interested in all these topics and wish to learn and apply them to your own research?  
+- Wish to learn and apply these concepts to your own research?  
 
-- [**CRSS XXXX: Applications of data science in agricultural research**, Spring 2024]{style="color:#BA0C2F"}
+- [**CRSS XXXX: Applications of data science in ag research**, Spring 2024]{style="color:#BA0C2F"}
 
 - **Thanks!** :pray: :computer:
 :::  
 :::  
+
+::: {.fragment }  
+![](qrcode.png){.absolute top=77% left=95% width=150 height=150}  
+:::
 
 
 
